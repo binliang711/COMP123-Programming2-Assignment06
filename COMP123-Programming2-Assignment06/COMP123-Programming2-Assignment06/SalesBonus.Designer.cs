@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesBonusForm));
             this.EmployeeNameLabel = new System.Windows.Forms.Label();
             this.EmployeeIDLabel = new System.Windows.Forms.Label();
             this.HoursWorkedLabel = new System.Windows.Forms.Label();
@@ -45,8 +47,10 @@
             this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
+            this.WarningProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).BeginInit();
             this.LanguageGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WarningProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // EmployeeNameLabel
@@ -157,6 +161,8 @@
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
             this.HoursWorkedTextBox.Size = new System.Drawing.Size(154, 26);
             this.HoursWorkedTextBox.TabIndex = 10;
+            this.HoursWorkedTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.HoursWorkedTextBox_Validating);
+            this.HoursWorkedTextBox.Validated += new System.EventHandler(this.HoursWorkedTextBox_Validated);
             // 
             // TotalSalesTextBox
             // 
@@ -221,13 +227,18 @@
             this.EnglishRadioButton.UseVisualStyleBackColor = true;
             this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this.EnglishRadioButton_CheckedChanged);
             // 
+            // WarningProvider
+            // 
+            this.WarningProvider.ContainerControl = this;
+            this.WarningProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("WarningProvider.Icon")));
+            // 
             // SalesBonusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(493, 455);
+            this.ClientSize = new System.Drawing.Size(493, 420);
             this.Controls.Add(this.LanguageGroupBox);
             this.Controls.Add(this.MainPictureBox);
             this.Controls.Add(this.SalesBonusTextBox);
@@ -248,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).EndInit();
             this.LanguageGroupBox.ResumeLayout(false);
             this.LanguageGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WarningProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +284,7 @@
         private System.Windows.Forms.GroupBox LanguageGroupBox;
         private System.Windows.Forms.RadioButton FrenchRadioButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
+        private System.Windows.Forms.ErrorProvider WarningProvider;
     }
 }
 

@@ -72,5 +72,28 @@ namespace COMP123_Programming2_Assignment06
 
             PrintButton.Text = Properties.Resources.PrintButtonStringFrench;
         }
+
+        private void HoursWorkedTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            string errorMessage = "";
+            int hoursWorked = Convert.ToInt32(HoursWorkedTextBox.Text);
+
+            if (hoursWorked > 160)
+            {
+                errorMessage = "Maxmum working hours is no more than 160 hours!";
+                WarningProvider.SetError(HoursWorkedTextBox, errorMessage);
+                HoursWorkedTextBox.SelectAll();
+                e.Cancel = true;
+            }
+            else
+            {
+                errorMessage = "";
+            }
+        }
+
+        private void HoursWorkedTextBox_Validated(object sender, EventArgs e)
+        {
+            WarningProvider.SetError(HoursWorkedTextBox, "");
+        }
     }
 }
