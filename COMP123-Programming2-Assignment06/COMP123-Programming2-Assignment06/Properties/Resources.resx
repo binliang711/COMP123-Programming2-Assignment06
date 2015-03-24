@@ -118,16 +118,106 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MailOrderCompanyBonusAdjust" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MailOrderCompanyBonusAdjust.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MailOrderCompanyBonusGrey " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MailOrderCompanyBonusGrey .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MailOrderCompanyBonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MailOrderCompanyBonus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MailOrderCompanyBonusAdjust2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MailOrderCompanyBonusAdjust2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CalculateButtonStringEnglish" xml:space="preserve">
+    <value>Calculate</value>
+    <comment>English Calculate Button</comment>
+  </data>
+  <data name="CalculateButtonStringFrench" xml:space="preserve">
+    <value>Calculer</value>
+    <comment>French Calculate Button</comment>
+  </data>
+  <data name="EmployeeIDLabelEnglish" xml:space="preserve">
+    <value>Employee ID:</value>
+    <comment>English Employee ID Label</comment>
+  </data>
+  <data name="EmployeeIDLabelFrench" xml:space="preserve">
+    <value>Employé Idaho:</value>
+    <comment>French Employee ID Label</comment>
+  </data>
+  <data name="EmployeeNameLabelEnglish" xml:space="preserve">
+    <value>Employee's Name</value>
+    <comment>English Employee's Name Label</comment>
+  </data>
+  <data name="EmployeeNameLabelFrench" xml:space="preserve">
+    <value>Nom de l'employé</value>
+    <comment>French Employee's Name Label</comment>
+  </data>
+  <data name="EnglishRadioButtonEnglish" xml:space="preserve">
+    <value>English</value>
+    <comment>English Radio Button in English</comment>
+  </data>
+  <data name="EnglishRadioButtonFrench" xml:space="preserve">
+    <value>Anglais</value>
+    <comment>English Radio Button in French</comment>
+  </data>
+  <data name="FrenchRadioButtonEnglish" xml:space="preserve">
+    <value>French</value>
+    <comment>French Radio Button in English</comment>
+  </data>
+  <data name="FrenchRadioButtonFrench" xml:space="preserve">
+    <value>Français</value>
+    <comment>French Radio Button in French</comment>
+  </data>
+  <data name="GroupBoxEnglish" xml:space="preserve">
+    <value>Language</value>
+    <comment>English GroupBox</comment>
+  </data>
+  <data name="GroupBoxFrench" xml:space="preserve">
+    <value>Langue</value>
+    <comment>French GroupBox</comment>
+  </data>
+  <data name="HoursWorkedLabelEnglish" xml:space="preserve">
+    <value>Hours Worked:</value>
+    <comment>English Hours Worked Label</comment>
+  </data>
+  <data name="HoursWorkedLabelFrench" xml:space="preserve">
+    <value>Heures travaillées:</value>
+    <comment>French Hours Worked Label</comment>
+  </data>
+  <data name="NextButtonStringEnglish" xml:space="preserve">
+    <value>Next</value>
+    <comment>English Next Button</comment>
+  </data>
+  <data name="NextButtonStringFrench" xml:space="preserve">
+    <value>Suivant</value>
+    <comment>French Next Button</comment>
+  </data>
+  <data name="PrintButtonStringEnglish" xml:space="preserve">
+    <value>Print</value>
+    <comment>English Print Button</comment>
+  </data>
+  <data name="PrintButtonStringFrench" xml:space="preserve">
+    <value>Imprimer</value>
+    <comment>French Print Button</comment>
+  </data>
+  <data name="SalesBonusLabelEnglish" xml:space="preserve">
+    <value>Sales Bonus:</value>
+    <comment>English Sales Bonus Label</comment>
+  </data>
+  <data name="SalesBonusLabelFrench" xml:space="preserve">
+    <value>Boni de vente:</value>
+    <comment>French Sales Bonus Label</comment>
+  </data>
+  <data name="TitleBarStringEnglish" xml:space="preserve">
+    <value>Sales Bonus:</value>
+    <comment>English Title Bar</comment>
+  </data>
+  <data name="TitleBarStringFrench" xml:space="preserve">
+    <value>Boni de vente:</value>
+    <comment>French Title Bar</comment>
+  </data>
+  <data name="TotalSalesLabelEnglish" xml:space="preserve">
+    <value>Total Sales:</value>
+    <comment>English Toatal Sales Label</comment>
+  </data>
+  <data name="TotalSalesLabelFrench" xml:space="preserve">
+    <value>Total des ventes:</value>
+    <comment>FrenchToatal Sales Label</comment>
   </data>
 </root>

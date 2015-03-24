@@ -61,21 +61,137 @@ namespace COMP123_Programming2_Assignment06.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Calculate.
         /// </summary>
-        internal static System.Drawing.Bitmap MailOrderCompanyBonus {
+        internal static string CalculateButtonStringEnglish {
             get {
-                object obj = ResourceManager.GetObject("MailOrderCompanyBonus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("CalculateButtonStringEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calculer.
+        /// </summary>
+        internal static string CalculateButtonStringFrench {
+            get {
+                return ResourceManager.GetString("CalculateButtonStringFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee ID:.
+        /// </summary>
+        internal static string EmployeeIDLabelEnglish {
+            get {
+                return ResourceManager.GetString("EmployeeIDLabelEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employé Idaho:.
+        /// </summary>
+        internal static string EmployeeIDLabelFrench {
+            get {
+                return ResourceManager.GetString("EmployeeIDLabelFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee&apos;s Name.
+        /// </summary>
+        internal static string EmployeeNameLabelEnglish {
+            get {
+                return ResourceManager.GetString("EmployeeNameLabelEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nom de l&apos;employé.
+        /// </summary>
+        internal static string EmployeeNameLabelFrench {
+            get {
+                return ResourceManager.GetString("EmployeeNameLabelFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        internal static string EnglishRadioButtonEnglish {
+            get {
+                return ResourceManager.GetString("EnglishRadioButtonEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anglais.
+        /// </summary>
+        internal static string EnglishRadioButtonFrench {
+            get {
+                return ResourceManager.GetString("EnglishRadioButtonFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to French.
+        /// </summary>
+        internal static string FrenchRadioButtonEnglish {
+            get {
+                return ResourceManager.GetString("FrenchRadioButtonEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Français.
+        /// </summary>
+        internal static string FrenchRadioButtonFrench {
+            get {
+                return ResourceManager.GetString("FrenchRadioButtonFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string GroupBoxEnglish {
+            get {
+                return ResourceManager.GetString("GroupBoxEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Langue.
+        /// </summary>
+        internal static string GroupBoxFrench {
+            get {
+                return ResourceManager.GetString("GroupBoxFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hours Worked:.
+        /// </summary>
+        internal static string HoursWorkedLabelEnglish {
+            get {
+                return ResourceManager.GetString("HoursWorkedLabelEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Heures travaillées:.
+        /// </summary>
+        internal static string HoursWorkedLabelFrench {
+            get {
+                return ResourceManager.GetString("HoursWorkedLabelFrench", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MailOrderCompanyBonusAdjust {
+        internal static System.Drawing.Bitmap MailOrderCompanyBonus {
             get {
-                object obj = ResourceManager.GetObject("MailOrderCompanyBonusAdjust", resourceCulture);
+                object obj = ResourceManager.GetObject("MailOrderCompanyBonus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -91,12 +207,92 @@ namespace COMP123_Programming2_Assignment06.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Next.
         /// </summary>
-        internal static System.Drawing.Bitmap MailOrderCompanyBonusGrey_ {
+        internal static string NextButtonStringEnglish {
             get {
-                object obj = ResourceManager.GetObject("MailOrderCompanyBonusGrey ", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("NextButtonStringEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suivant.
+        /// </summary>
+        internal static string NextButtonStringFrench {
+            get {
+                return ResourceManager.GetString("NextButtonStringFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print.
+        /// </summary>
+        internal static string PrintButtonStringEnglish {
+            get {
+                return ResourceManager.GetString("PrintButtonStringEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Imprimer.
+        /// </summary>
+        internal static string PrintButtonStringFrench {
+            get {
+                return ResourceManager.GetString("PrintButtonStringFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales Bonus:.
+        /// </summary>
+        internal static string SalesBonusLabelEnglish {
+            get {
+                return ResourceManager.GetString("SalesBonusLabelEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boni de vente:.
+        /// </summary>
+        internal static string SalesBonusLabelFrench {
+            get {
+                return ResourceManager.GetString("SalesBonusLabelFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales Bonus:.
+        /// </summary>
+        internal static string TitleBarStringEnglish {
+            get {
+                return ResourceManager.GetString("TitleBarStringEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boni de vente:.
+        /// </summary>
+        internal static string TitleBarStringFrench {
+            get {
+                return ResourceManager.GetString("TitleBarStringFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Sales:.
+        /// </summary>
+        internal static string TotalSalesLabelEnglish {
+            get {
+                return ResourceManager.GetString("TotalSalesLabelEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total des ventes:.
+        /// </summary>
+        internal static string TotalSalesLabelFrench {
+            get {
+                return ResourceManager.GetString("TotalSalesLabelFrench", resourceCulture);
             }
         }
     }
