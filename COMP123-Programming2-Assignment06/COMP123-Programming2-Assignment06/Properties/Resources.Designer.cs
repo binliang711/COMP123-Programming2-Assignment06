@@ -189,19 +189,9 @@ namespace COMP123_Programming2_Assignment06.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MailOrderCompanyBonus {
+        internal static System.Drawing.Bitmap MailOrderCompanyBonusImprove {
             get {
-                object obj = ResourceManager.GetObject("MailOrderCompanyBonus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MailOrderCompanyBonusAdjust2 {
-            get {
-                object obj = ResourceManager.GetObject("MailOrderCompanyBonusAdjust2", resourceCulture);
+                object obj = ResourceManager.GetObject("MailOrderCompanyBonusImprove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

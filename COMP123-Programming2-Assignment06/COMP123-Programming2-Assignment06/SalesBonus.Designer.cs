@@ -41,11 +41,11 @@
             this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
             this.TotalSalesTextBox = new System.Windows.Forms.TextBox();
             this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MainPictureBox = new System.Windows.Forms.PictureBox();
             this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).BeginInit();
             this.LanguageGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,15 +174,15 @@
             this.SalesBonusTextBox.Size = new System.Drawing.Size(154, 26);
             this.SalesBonusTextBox.TabIndex = 12;
             // 
-            // pictureBox1
+            // MainPictureBox
             // 
-            this.pictureBox1.Image = global::COMP123_Programming2_Assignment06.Properties.Resources.MailOrderCompanyBonusAdjust2;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 132);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.MainPictureBox.Image = global::COMP123_Programming2_Assignment06.Properties.Resources.MailOrderCompanyBonusImprove;
+            this.MainPictureBox.Location = new System.Drawing.Point(49, 20);
+            this.MainPictureBox.Name = "MainPictureBox";
+            this.MainPictureBox.Size = new System.Drawing.Size(166, 132);
+            this.MainPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MainPictureBox.TabIndex = 13;
+            this.MainPictureBox.TabStop = false;
             // 
             // LanguageGroupBox
             // 
@@ -229,7 +229,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(493, 455);
             this.Controls.Add(this.LanguageGroupBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MainPictureBox);
             this.Controls.Add(this.SalesBonusTextBox);
             this.Controls.Add(this.TotalSalesTextBox);
             this.Controls.Add(this.HoursWorkedTextBox);
@@ -245,7 +245,7 @@
             this.Controls.Add(this.EmployeeNameLabel);
             this.Name = "SalesBonusForm";
             this.Text = "Sales Bonus";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).EndInit();
             this.LanguageGroupBox.ResumeLayout(false);
             this.LanguageGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -268,7 +268,7 @@
         private System.Windows.Forms.TextBox HoursWorkedTextBox;
         private System.Windows.Forms.TextBox TotalSalesTextBox;
         private System.Windows.Forms.TextBox SalesBonusTextBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox MainPictureBox;
         private System.Windows.Forms.GroupBox LanguageGroupBox;
         private System.Windows.Forms.RadioButton FrenchRadioButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
