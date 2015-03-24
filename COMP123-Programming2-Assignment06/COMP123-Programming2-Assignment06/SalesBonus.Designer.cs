@@ -41,6 +41,8 @@
             this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
             this.TotalSalesTextBox = new System.Windows.Forms.TextBox();
             this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // EmployeeNameLabel
@@ -168,11 +170,23 @@
             this.SalesBonusTextBox.Size = new System.Drawing.Size(154, 26);
             this.SalesBonusTextBox.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::COMP123_Programming2_Assignment06.Properties.Resources.MailOrderCompanyBonusAdjust2;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // SalesBonusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(433, 420);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SalesBonusTextBox);
             this.Controls.Add(this.TotalSalesTextBox);
             this.Controls.Add(this.HoursWorkedTextBox);
@@ -188,6 +202,7 @@
             this.Controls.Add(this.EmployeeNameLabel);
             this.Name = "SalesBonusForm";
             this.Text = "Sales Bonus";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +223,7 @@
         private System.Windows.Forms.TextBox HoursWorkedTextBox;
         private System.Windows.Forms.TextBox TotalSalesTextBox;
         private System.Windows.Forms.TextBox SalesBonusTextBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
