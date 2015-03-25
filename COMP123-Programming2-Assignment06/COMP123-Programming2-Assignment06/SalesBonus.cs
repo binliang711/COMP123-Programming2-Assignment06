@@ -132,5 +132,13 @@ namespace COMP123_Programming2_Assignment06
             string salesBonusDisplay = string.Format("{0:C2}", salesBonus);
             SalesBonusTextBox.Text = salesBonusDisplay;
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            EmployeeNameTextBox.Text = "";
+            EmployeeIDTextBox.Text = "";
+            HoursWorkedTextBox.Text = "";
+            SalesBonusTextBox.Text = "";
+        }
     }
 }
