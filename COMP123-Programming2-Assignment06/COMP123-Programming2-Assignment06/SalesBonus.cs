@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace COMP123_Programming2_Assignment06
 {
@@ -73,6 +74,7 @@ namespace COMP123_Programming2_Assignment06
             PrintButton.Text = Properties.Resources.PrintButtonStringFrench;
         }
 
+        
         private void HoursWorkedTextBox_Validating(object sender, CancelEventArgs e)
         {
             string errorMessage = "";
@@ -94,6 +96,41 @@ namespace COMP123_Programming2_Assignment06
         private void HoursWorkedTextBox_Validated(object sender, EventArgs e)
         {
             WarningProvider.SetError(HoursWorkedTextBox, "");
+        }
+
+        private void TotalSalesTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            string errorMessage = "";
+            double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
+            string totalSales = string.Format("{0:C2}", value);
+
+            if (totalSales != TotalSalesTextBox.Text)
+            {
+                errorMessage = "The input value must use standard currency format!";
+                WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                TotalSalesTextBox.SelectAll();
+                e.Cancel = true;
+            }
+            else
+            {
+                errorMessage = "";
+            }
+        }
+
+        private void TotalSalesTextBox_Validated(object sender, EventArgs e)
+        {
+            WarningProvider.SetError(TotalSalesTextBox, "");
+        }
+
+        private void CalculateButton_Click(object sender, EventArgs e)
+        {
+            int hoursWorked = Convert.ToInt32(HoursWorkedTextBox.Text);
+            double percentageOfHoursWorked = Convert.ToDouble(hoursWorked) / 160;
+            double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
+            double totalBonusAmount = value * 0.02;
+            double salesBonus = totalBonusAmount * percentageOfHoursWorked;
+            string salesBonusDisplay = string.Format("{0:C2}", salesBonus);
+            SalesBonusTextBox.Text = salesBonusDisplay;
         }
     }
 }
