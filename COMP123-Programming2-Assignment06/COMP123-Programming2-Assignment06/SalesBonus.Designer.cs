@@ -48,7 +48,7 @@
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.WarningProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).BeginInit();
             this.LanguageGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WarningProvider)).BeginInit();
@@ -134,6 +134,7 @@
             this.PrintButton.TabIndex = 6;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // NextButton
             // 
@@ -243,15 +244,13 @@
             this.WarningProvider.ContainerControl = this;
             this.WarningProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("WarningProvider.Icon")));
             // 
-            // printPreviewDialog1
+            // printForm1
             // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            this.printForm1.DocumentName = "document";
+            this.printForm1.Form = this;
+            this.printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter;
+            this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
+            this.printForm1.PrintFileName = null;
             // 
             // SalesBonusForm
             // 
@@ -307,7 +306,7 @@
         private System.Windows.Forms.RadioButton FrenchRadioButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
         private System.Windows.Forms.ErrorProvider WarningProvider;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
     }
 }
 

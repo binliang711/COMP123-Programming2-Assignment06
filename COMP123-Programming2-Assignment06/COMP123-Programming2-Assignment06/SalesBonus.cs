@@ -145,5 +145,11 @@ namespace COMP123_Programming2_Assignment06
             HoursWorkedTextBox.Text = "";
             SalesBonusTextBox.Text = "";
         }
+
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+            printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
+            printForm1.Print();
+        }
     }
 }
