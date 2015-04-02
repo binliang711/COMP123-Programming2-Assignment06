@@ -30,14 +30,19 @@ namespace COMP123_Programming2_Assignment06
             FrenchRadioButton.Text = Properties.Resources.FrenchRadioButtonEnglish;
 
             EmployeeNameLabel.Text = Properties.Resources.EmployeeNameLabelEnglish;
+            EmployeeNameLabel.TextAlign = ContentAlignment.MiddleRight;
 
             EmployeeIDLabel.Text = Properties.Resources.EmployeeIDLabelEnglish;
+            EmployeeIDLabel.TextAlign = ContentAlignment.MiddleRight;
 
             HoursWorkedLabel.Text = Properties.Resources.HoursWorkedLabelEnglish;
-
+            HoursWorkedLabel.TextAlign = ContentAlignment.MiddleRight;
+            
             TotalSalesLabel.Text = Properties.Resources.TotalSalesLabelEnglish;
+            TotalSalesLabel.TextAlign = ContentAlignment.MiddleRight;
 
             SalesBonusLabel.Text = Properties.Resources.SalesBonusLabelEnglish;
+            SalesBonusLabel.TextAlign = ContentAlignment.MiddleRight;
 
             CalculateButton.Text = Properties.Resources.CalculateButtonStringEnglish;
 

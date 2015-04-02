@@ -48,6 +48,7 @@
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.WarningProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.MainPictureBox)).BeginInit();
             this.LanguageGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WarningProvider)).BeginInit();
@@ -57,9 +58,10 @@
             // 
             this.EmployeeNameLabel.AutoSize = true;
             this.EmployeeNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeNameLabel.Location = new System.Drawing.Point(69, 173);
+            this.EmployeeNameLabel.Location = new System.Drawing.Point(52, 176);
+            this.EmployeeNameLabel.MinimumSize = new System.Drawing.Size(160, 20);
             this.EmployeeNameLabel.Name = "EmployeeNameLabel";
-            this.EmployeeNameLabel.Size = new System.Drawing.Size(151, 20);
+            this.EmployeeNameLabel.Size = new System.Drawing.Size(160, 20);
             this.EmployeeNameLabel.TabIndex = 0;
             this.EmployeeNameLabel.Text = "Employee\'s Name";
             this.EmployeeNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -68,9 +70,10 @@
             // 
             this.EmployeeIDLabel.AutoSize = true;
             this.EmployeeIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeIDLabel.Location = new System.Drawing.Point(104, 211);
+            this.EmployeeIDLabel.Location = new System.Drawing.Point(52, 211);
+            this.EmployeeIDLabel.MinimumSize = new System.Drawing.Size(160, 20);
             this.EmployeeIDLabel.Name = "EmployeeIDLabel";
-            this.EmployeeIDLabel.Size = new System.Drawing.Size(116, 20);
+            this.EmployeeIDLabel.Size = new System.Drawing.Size(160, 20);
             this.EmployeeIDLabel.TabIndex = 1;
             this.EmployeeIDLabel.Text = "Employee ID:";
             this.EmployeeIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -79,9 +82,10 @@
             // 
             this.HoursWorkedLabel.AutoSize = true;
             this.HoursWorkedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HoursWorkedLabel.Location = new System.Drawing.Point(92, 247);
+            this.HoursWorkedLabel.Location = new System.Drawing.Point(52, 247);
+            this.HoursWorkedLabel.MinimumSize = new System.Drawing.Size(160, 20);
             this.HoursWorkedLabel.Name = "HoursWorkedLabel";
-            this.HoursWorkedLabel.Size = new System.Drawing.Size(128, 20);
+            this.HoursWorkedLabel.Size = new System.Drawing.Size(160, 20);
             this.HoursWorkedLabel.TabIndex = 2;
             this.HoursWorkedLabel.Text = "Hours Worked:";
             this.HoursWorkedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -90,9 +94,10 @@
             // 
             this.TotalSalesLabel.AutoSize = true;
             this.TotalSalesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalSalesLabel.Location = new System.Drawing.Point(111, 281);
+            this.TotalSalesLabel.Location = new System.Drawing.Point(52, 281);
+            this.TotalSalesLabel.MinimumSize = new System.Drawing.Size(160, 20);
             this.TotalSalesLabel.Name = "TotalSalesLabel";
-            this.TotalSalesLabel.Size = new System.Drawing.Size(104, 20);
+            this.TotalSalesLabel.Size = new System.Drawing.Size(160, 20);
             this.TotalSalesLabel.TabIndex = 3;
             this.TotalSalesLabel.Text = "Total Sales:";
             this.TotalSalesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -101,9 +106,10 @@
             // 
             this.SalesBonusLabel.AutoSize = true;
             this.SalesBonusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalesBonusLabel.Location = new System.Drawing.Point(100, 313);
+            this.SalesBonusLabel.Location = new System.Drawing.Point(52, 313);
+            this.SalesBonusLabel.MinimumSize = new System.Drawing.Size(160, 20);
             this.SalesBonusLabel.Name = "SalesBonusLabel";
-            this.SalesBonusLabel.Size = new System.Drawing.Size(115, 20);
+            this.SalesBonusLabel.Size = new System.Drawing.Size(160, 20);
             this.SalesBonusLabel.TabIndex = 4;
             this.SalesBonusLabel.Text = "Sales Bonus:";
             this.SalesBonusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,7 +149,7 @@
             // EmployeeNameTextBox
             // 
             this.EmployeeNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeNameTextBox.Location = new System.Drawing.Point(247, 173);
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(259, 173);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(214, 26);
             this.EmployeeNameTextBox.TabIndex = 8;
@@ -151,7 +157,7 @@
             // EmployeeIDTextBox
             // 
             this.EmployeeIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeIDTextBox.Location = new System.Drawing.Point(247, 208);
+            this.EmployeeIDTextBox.Location = new System.Drawing.Point(259, 208);
             this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
             this.EmployeeIDTextBox.Size = new System.Drawing.Size(154, 26);
             this.EmployeeIDTextBox.TabIndex = 9;
@@ -159,7 +165,7 @@
             // HoursWorkedTextBox
             // 
             this.HoursWorkedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HoursWorkedTextBox.Location = new System.Drawing.Point(247, 247);
+            this.HoursWorkedTextBox.Location = new System.Drawing.Point(259, 247);
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
             this.HoursWorkedTextBox.Size = new System.Drawing.Size(154, 26);
             this.HoursWorkedTextBox.TabIndex = 10;
@@ -169,7 +175,7 @@
             // TotalSalesTextBox
             // 
             this.TotalSalesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalSalesTextBox.Location = new System.Drawing.Point(247, 281);
+            this.TotalSalesTextBox.Location = new System.Drawing.Point(259, 281);
             this.TotalSalesTextBox.Name = "TotalSalesTextBox";
             this.TotalSalesTextBox.Size = new System.Drawing.Size(154, 26);
             this.TotalSalesTextBox.TabIndex = 11;
@@ -180,7 +186,7 @@
             // 
             this.SalesBonusTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.SalesBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalesBonusTextBox.Location = new System.Drawing.Point(247, 313);
+            this.SalesBonusTextBox.Location = new System.Drawing.Point(259, 313);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
             this.SalesBonusTextBox.Size = new System.Drawing.Size(154, 26);
@@ -215,7 +221,6 @@
             this.FrenchRadioButton.Name = "FrenchRadioButton";
             this.FrenchRadioButton.Size = new System.Drawing.Size(96, 24);
             this.FrenchRadioButton.TabIndex = 1;
-            this.FrenchRadioButton.TabStop = true;
             this.FrenchRadioButton.Text = "Français";
             this.FrenchRadioButton.UseVisualStyleBackColor = true;
             this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this.FrenchRadioButton_CheckedChanged);
@@ -237,6 +242,16 @@
             // 
             this.WarningProvider.ContainerControl = this;
             this.WarningProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("WarningProvider.Icon")));
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // SalesBonusForm
             // 
@@ -292,6 +307,7 @@
         private System.Windows.Forms.RadioButton FrenchRadioButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
         private System.Windows.Forms.ErrorProvider WarningProvider;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 
