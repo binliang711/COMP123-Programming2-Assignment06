@@ -105,21 +105,89 @@ namespace COMP123_Programming2_Assignment06
 
         private void TotalSalesTextBox_Validating(object sender, CancelEventArgs e)
         {
-            string errorMessage = "";
-            double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
-            string totalSales = string.Format("{0:C2}", value);
-
-            if (totalSales != TotalSalesTextBox.Text)
+            /*string errorMessage = "";
+            string totalSales = "";
+            
+            try
             {
-                errorMessage = "The input value must use standard currency format!";
+                double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
+                totalSales = string.Format("{0:C2}", value);
+                TotalSalesTextBox.Text = totalSales;
+            }
+            catch (Exception)
+            {
+                if (totalSales != TotalSalesTextBox.Text)
+                {
+                    errorMessage = "The input value must use standard currency format!";
+                    WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                    TotalSalesTextBox.SelectAll();
+                    e.Cancel = true;
+
+                }
+                else if (TotalSalesTextBox.Text == "")
+                {
+                    errorMessage = "Total sales must not be empty!";
+                    WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                    TotalSalesTextBox.SelectAll();
+                    e.Cancel = true;
+                }              
+                else //(TotalSalesTextBox.Text != "")
+                {
+                    try
+                    {
+                        double inputSalesValue = 0;
+                        inputSalesValue = Convert.ToDouble(TotalSalesTextBox.Text);
+                    }
+                    catch (Exception)
+                    {
+                        if (TotalSalesTextBox.Text == "0")
+                        {
+                            errorMessage = "Total sales must not be zero!";
+                            WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                            TotalSalesTextBox.SelectAll();
+                            e.Cancel = true;
+                        }        
+                    }                   
+                }             
+            }*/
+
+            string errorMessage = "";        
+            
+            string totalSales ="";
+
+            double inputSalesValue = 0;
+            inputSalesValue = Convert.ToDouble(TotalSalesTextBox.Text);
+
+            if (inputSalesValue <= 0)
+            {
+                errorMessage = "Total sales must be greater than zero!";
                 WarningProvider.SetError(TotalSalesTextBox, errorMessage);
                 TotalSalesTextBox.SelectAll();
                 e.Cancel = true;
             }
             else
             {
-                errorMessage = "";
-            }
+                try
+                {
+                    double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
+                    totalSales = string.Format("{0:C2}", value);
+                    TotalSalesTextBox.Text = totalSales;
+                }
+                catch (Exception)
+                {
+                    if (totalSales != TotalSalesTextBox.Text)
+                    {
+                        errorMessage = "The input value must use standard currency format!";
+                        WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                        TotalSalesTextBox.SelectAll();
+                        e.Cancel = true;
+                    }
+                    else
+                    {
+                        errorMessage = "";
+                    }
+                }
+            }        
         }
 
         private void TotalSalesTextBox_Validated(object sender, EventArgs e)
