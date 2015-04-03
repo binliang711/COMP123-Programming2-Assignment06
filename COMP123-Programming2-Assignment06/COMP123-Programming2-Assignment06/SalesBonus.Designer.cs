@@ -154,6 +154,8 @@
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(214, 26);
             this.EmployeeNameTextBox.TabIndex = 8;
+            this.EmployeeNameTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.EmployeeNameTextBox_Validating);
+            this.EmployeeNameTextBox.Validated += new System.EventHandler(this.EmployeeNameTextBox_Validated);
             // 
             // EmployeeIDTextBox
             // 
@@ -162,6 +164,8 @@
             this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
             this.EmployeeIDTextBox.Size = new System.Drawing.Size(154, 26);
             this.EmployeeIDTextBox.TabIndex = 9;
+            this.EmployeeIDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.EmployeeIDTextBox_Validating);
+            this.EmployeeIDTextBox.Validated += new System.EventHandler(this.EmployeeIDTextBox_Validated);
             // 
             // HoursWorkedTextBox
             // 

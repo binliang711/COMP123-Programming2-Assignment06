@@ -85,9 +85,9 @@ namespace COMP123_Programming2_Assignment06
             string errorMessage = "";
             int hoursWorked = Convert.ToInt32(HoursWorkedTextBox.Text);
 
-            if (hoursWorked > 160)
+            if (hoursWorked > 160 || hoursWorked <= 0)
             {
-                errorMessage = "Maxmum working hours is no more than 160 hours!";
+                errorMessage = "Maximum working hours must be less than or equal to 160 hours, or greater than zero!";
                 WarningProvider.SetError(HoursWorkedTextBox, errorMessage);
                 HoursWorkedTextBox.SelectAll();
                 e.Cancel = true;
@@ -105,62 +105,19 @@ namespace COMP123_Programming2_Assignment06
 
         private void TotalSalesTextBox_Validating(object sender, CancelEventArgs e)
         {
-            /*string errorMessage = "";
-            string totalSales = "";
-            
-            try
-            {
-                double value = Double.Parse(TotalSalesTextBox.Text, NumberStyles.Currency);
-                totalSales = string.Format("{0:C2}", value);
-                TotalSalesTextBox.Text = totalSales;
-            }
-            catch (Exception)
-            {
-                if (totalSales != TotalSalesTextBox.Text)
-                {
-                    errorMessage = "The input value must use standard currency format!";
-                    WarningProvider.SetError(TotalSalesTextBox, errorMessage);
-                    TotalSalesTextBox.SelectAll();
-                    e.Cancel = true;
-
-                }
-                else if (TotalSalesTextBox.Text == "")
-                {
-                    errorMessage = "Total sales must not be empty!";
-                    WarningProvider.SetError(TotalSalesTextBox, errorMessage);
-                    TotalSalesTextBox.SelectAll();
-                    e.Cancel = true;
-                }              
-                else //(TotalSalesTextBox.Text != "")
-                {
-                    try
-                    {
-                        double inputSalesValue = 0;
-                        inputSalesValue = Convert.ToDouble(TotalSalesTextBox.Text);
-                    }
-                    catch (Exception)
-                    {
-                        if (TotalSalesTextBox.Text == "0")
-                        {
-                            errorMessage = "Total sales must not be zero!";
-                            WarningProvider.SetError(TotalSalesTextBox, errorMessage);
-                            TotalSalesTextBox.SelectAll();
-                            e.Cancel = true;
-                        }        
-                    }                   
-                }             
-            }*/
-
-            string errorMessage = "";        
-            
+            string errorMessage = "";                    
             string totalSales ="";
 
-            double inputSalesValue = 0;
-            inputSalesValue = Convert.ToDouble(TotalSalesTextBox.Text);
-
-            if (inputSalesValue <= 0)
+            if (string.IsNullOrEmpty(TotalSalesTextBox.Text))
             {
-                errorMessage = "Total sales must be greater than zero!";
+                errorMessage = "Employee name can't be null or empty!";
+                WarningProvider.SetError(TotalSalesTextBox, errorMessage);
+                TotalSalesTextBox.SelectAll();
+                e.Cancel = true;
+            }
+            else if (Convert.ToDouble(TotalSalesTextBox.Text) <= 0)
+            {
+                errorMessage = "Total sales must greater than zero!";
                 WarningProvider.SetError(TotalSalesTextBox, errorMessage);
                 TotalSalesTextBox.SelectAll();
                 e.Cancel = true;
@@ -218,6 +175,50 @@ namespace COMP123_Programming2_Assignment06
         {
             printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
             printForm1.Print();
+        }
+
+     
+
+        private void EmployeeNameTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            string errorMessage = "";
+            if (string.IsNullOrEmpty(EmployeeNameTextBox.Text))
+            {
+                errorMessage = "Employee name can't be null or empty!"; 
+                WarningProvider.SetError(EmployeeNameTextBox, errorMessage);
+                EmployeeNameTextBox.SelectAll();
+                e.Cancel = true;
+            }
+            else
+            {
+                WarningProvider.SetError(EmployeeNameTextBox, "");
+            }            
+        }
+
+        private void EmployeeNameTextBox_Validated(object sender, EventArgs e)
+        {
+            WarningProvider.SetError(EmployeeNameTextBox, "");
+        }
+
+        private void EmployeeIDTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            string errorMessage = "";
+            if (string.IsNullOrEmpty(EmployeeIDTextBox.Text))
+            {
+                errorMessage = "Employee name can't be null or empty!";
+                WarningProvider.SetError(EmployeeIDTextBox, errorMessage);
+                EmployeeIDTextBox.SelectAll();
+                e.Cancel = true;
+            }
+            else
+            {
+                WarningProvider.SetError(EmployeeNameTextBox, "");
+            }          
+        }
+
+        private void EmployeeIDTextBox_Validated(object sender, EventArgs e)
+        {
+            WarningProvider.SetError(EmployeeIDTextBox, "");
         }
     }
 }
