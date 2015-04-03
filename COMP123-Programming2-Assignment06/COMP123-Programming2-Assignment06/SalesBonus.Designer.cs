@@ -120,7 +120,7 @@
             this.CalculateButton.Location = new System.Drawing.Point(60, 366);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(97, 33);
-            this.CalculateButton.TabIndex = 5;
+            this.CalculateButton.TabIndex = 7;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
@@ -131,7 +131,7 @@
             this.PrintButton.Location = new System.Drawing.Point(197, 366);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(97, 33);
-            this.PrintButton.TabIndex = 6;
+            this.PrintButton.TabIndex = 8;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
             this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
@@ -142,7 +142,7 @@
             this.NextButton.Location = new System.Drawing.Point(333, 366);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(97, 33);
-            this.NextButton.TabIndex = 7;
+            this.NextButton.TabIndex = 9;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
@@ -153,7 +153,7 @@
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(259, 173);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(214, 26);
-            this.EmployeeNameTextBox.TabIndex = 8;
+            this.EmployeeNameTextBox.TabIndex = 2;
             this.EmployeeNameTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.EmployeeNameTextBox_Validating);
             this.EmployeeNameTextBox.Validated += new System.EventHandler(this.EmployeeNameTextBox_Validated);
             // 
@@ -163,7 +163,7 @@
             this.EmployeeIDTextBox.Location = new System.Drawing.Point(259, 208);
             this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
             this.EmployeeIDTextBox.Size = new System.Drawing.Size(154, 26);
-            this.EmployeeIDTextBox.TabIndex = 9;
+            this.EmployeeIDTextBox.TabIndex = 3;
             this.EmployeeIDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.EmployeeIDTextBox_Validating);
             this.EmployeeIDTextBox.Validated += new System.EventHandler(this.EmployeeIDTextBox_Validated);
             // 
@@ -173,7 +173,7 @@
             this.HoursWorkedTextBox.Location = new System.Drawing.Point(259, 247);
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
             this.HoursWorkedTextBox.Size = new System.Drawing.Size(154, 26);
-            this.HoursWorkedTextBox.TabIndex = 10;
+            this.HoursWorkedTextBox.TabIndex = 4;
             this.HoursWorkedTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.HoursWorkedTextBox_Validating);
             this.HoursWorkedTextBox.Validated += new System.EventHandler(this.HoursWorkedTextBox_Validated);
             // 
@@ -183,7 +183,7 @@
             this.TotalSalesTextBox.Location = new System.Drawing.Point(259, 281);
             this.TotalSalesTextBox.Name = "TotalSalesTextBox";
             this.TotalSalesTextBox.Size = new System.Drawing.Size(154, 26);
-            this.TotalSalesTextBox.TabIndex = 11;
+            this.TotalSalesTextBox.TabIndex = 5;
             this.TotalSalesTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.TotalSalesTextBox_Validating);
             this.TotalSalesTextBox.Validated += new System.EventHandler(this.TotalSalesTextBox_Validated);
             // 
@@ -195,7 +195,7 @@
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
             this.SalesBonusTextBox.Size = new System.Drawing.Size(154, 26);
-            this.SalesBonusTextBox.TabIndex = 12;
+            this.SalesBonusTextBox.TabIndex = 6;
             // 
             // MainPictureBox
             // 
