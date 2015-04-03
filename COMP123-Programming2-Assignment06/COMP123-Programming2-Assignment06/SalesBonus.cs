@@ -15,7 +15,7 @@
  * 10.Improve total sales valid data check.
  * 11.Improve other textboxes valid data check.
  * 12.Improve internal documentation.
- * 13.Improve TapIndes.
+ * 13.Improve TapIndex.
  */
 using System;
 using System.Collections.Generic;
